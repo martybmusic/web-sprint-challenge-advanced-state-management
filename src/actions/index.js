@@ -10,7 +10,7 @@ export const SMURF_ERROR = 'SMURF_ERROR';
 export const fetchSmurfs = () => {
     return (dispatch) => {
         dispatch(fetchStart());
-        axios.get('http://localhost:3000/smurfs/')
+        axios.get('http://localhost:3333/smurfs/')
         .then(res => {
             // console.log ('AXIOS FETCHING DATA: ', res);
             dispatch(fetchSuccess(res.data))
