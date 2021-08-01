@@ -1,11 +1,11 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import AddForm from './components/AddForm';
 import SmurfList from './components/SmurfList';
 import Header from './components/Header';
 
-import { fetchStart, fetchSuccess, fetchFail, fetchSmurfs } from './actions';
+import { fetchSmurfs } from './actions';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
